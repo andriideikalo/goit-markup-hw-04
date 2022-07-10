@@ -17,6 +17,13 @@ body {
 	font-size: var(--primary-font-size);
 	letter-spacing: 0.03em;
 }
+
+
+
+
+
+
+
 h1,
 h2,
 h3,
@@ -352,4 +359,13 @@ a {
 .contact-footer:focus  {
 	color: var(--color-akcent);
 	outline: none;
+}
+.nav-svg {
+	fill: var(--color-primary-text);
+	margin-right: 10px;
+
+}
+.contact:hover .nav-svg {
+		fill: var(--color-akcent);
+	
 }
