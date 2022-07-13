@@ -9,7 +9,7 @@
 	--color-btn-hover: #188ce8;
 	--color-icon: #afb1b8;
 	--background-footer-icon: rgba(255, 255, 255, 0.1);
-	--background-hero: #c4c4c4
+	--background-hero: #c4c4c4;
 	--primary-font-size: 14px;
 }
 
@@ -41,6 +41,10 @@ a {
 }
 li {
 	list-style: none;
+}
+ul {
+	padding: 0;
+	margin: 0;
 }
 .container {
 	margin: 0 auto;
@@ -94,6 +98,8 @@ li {
 .contact {
 	font-family: inherit;
 	font-weight: 500;
+	display: flex;
+	align-items: center;
 	font-style: normal;
 	font-size: var(--primary-font-size);
 	line-height: 1.14;
@@ -113,18 +119,20 @@ li {
 	color: var(--color-akcent);
 }
 .nav-svg {
-	fill: var(--color-primary-text);
+	fill: currentColor;
 	margin-right: 10px;
 }
-.contact:hover .nav-svg {
-	fill: var(--color-akcent);
-}
+
 /* -------------------------------------styles main Studio ---------------------------------*/
 
 .herro-content {
-	background: var(--background-hero);
 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-hero.jpg);
+	background-color: var(--background-hero);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	max-width: 1600px;
+	height: 600px;
 	padding: 200px 0;
 	text-align: center;
 	margin: 0 auto;
@@ -228,7 +236,7 @@ li {
 	text-align: center;
 }
 .about-team {
-	padding: 30px 32px;
+	padding: 30px 0;
 }
 .team-positions {
 	font-size: 16px;
@@ -245,33 +253,41 @@ li {
 	background: var(--primary-color);
 }
 .team-link {
-	display: block;
-	text-align: center;
+	display: flex;
+	margin: 0 auto;
 	width: 206px;
+	gap: 10px;
+	
 }
 .team-social {
+	display: block;
 	text-align: center;
-	background: var(--primary-color);
+	color: var(--color-icon);
 	width: 44px;
 	height: 44px;
 	border: none;
 	border-radius: 50%;
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 	cursor: pointer;
+	padding: 10px;
+	
 }
 .team-social:hover,
 .team-social:focus {
 	background: var(--color-akcent);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	outline: none;
 }
 .team-icon {
-	fill: var(--color-icon);
+	fill: currentColor;
 	width: 20px;
 	height: 20px;
 	cursor: pointer;
+
 }
 .team-social:hover .team-icon,
 .team-social:focus .team-icon {
 	fill: var(--primary-color);
+	outline: none;
 }
 
 .client-title {
@@ -286,26 +302,31 @@ li {
 
 .client-list {
 	display: flex;
-	padding-left: 0;
 	gap: 30px;
 }
 .client-item {
+	display: block;
 	width: 170px;
 	height: 92px;
 	border: 1px solid var(--color-icon);
-	fill: var(--color-icon);
+	color: var(--color-icon);
 	border-radius: 4px;
 	cursor: pointer;
 }
 .client-icon {
+fill: currentColor;
 	width: 170px;
 	height: 92px;
 	align-items: center;
 }
-.client-icon:hover,
-.client-icon:focus {
+
+.client-item:hover,
+.client-item:focus,
+.client-item:hover .client-icon,
+.client-item:focus .client-icon {
 	fill: var(--color-akcent);
 	border: 1px solid var(--color-akcent);
+	outline: none;
 }
 /* ----------------------------styles main Portfolio ----------------------------*/
 
@@ -453,22 +474,31 @@ li {
 	color: var(--primary-color);
 	margin-bottom: 20px;
 }
-.footer-social {
-	text-align: center;
+.footer-link-social {
 	background: var(--background-footer-icon);
 	width: 44px;
 	height: 44px;
 	border: none;
 	border-radius: 50%;
 	cursor: pointer;
-	padding: 0;
+	padding: 10px;
+
 }
-.footer-social:hover,
-.footer-social:focus {
-	background: var(--color-akcent);
+.footer-link-social {
+	display: block;
+}
+.footer-link-social:hover,
+.footer-link-social:focus {
+	background-color: var(--color-akcent);
+	outline: none;
 }
 .footer-icon {
 	fill: var(--primary-color);
 	width: 20px;
 	height: 20px;
+	
+}
+.footer-list-social {
+	display: flex;
+	gap: 10px;
 }
