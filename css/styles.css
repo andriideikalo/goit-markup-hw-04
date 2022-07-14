@@ -260,15 +260,15 @@ ul {
 	
 }
 .team-social {
-	display: block;
-	text-align: center;
 	color: var(--color-icon);
 	width: 44px;
 	height: 44px;
 	border: none;
 	border-radius: 50%;
 	cursor: pointer;
-	padding: 10px;
+	display: flex;
+    	align-items: center;
+    	justify-content: center;
 	
 }
 .team-social:hover,
