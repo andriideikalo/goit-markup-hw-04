@@ -483,12 +483,11 @@ ul {
 	border: none;
 	border-radius: 50%;
 	cursor: pointer;
-	padding: 10px;
+	display: flex;
+        justify-content: center;
+        align-items: center;
+}
 
-}
-.footer-link-social {
-	display: block;
-}
 .footer-link-social:hover,
 .footer-link-social:focus {
 	background-color: var(--color-akcent);
