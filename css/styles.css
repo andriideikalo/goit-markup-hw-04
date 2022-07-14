@@ -463,10 +463,6 @@ ul {
 	color: var(--color-akcent);
 	outline: none;
 }
-.footer-link {
-	display: flex;
-	gap: 70px;
-}
 
 .footer-title-social {
 	font-weight: 700;
@@ -476,6 +472,7 @@ ul {
 	text-transform: uppercase;
 	color: var(--primary-color);
 	margin-bottom: 20px;
+	padding-top: 10px;
 }
 .footer-link-social {
 	background: var(--background-footer-icon);
@@ -499,7 +496,11 @@ ul {
 	width: 20px;
 	height: 20px;
 }
-.footer-list-social {
+.container-flex {
 	display: flex;
-	gap: 10px;
+	gap: 70px;
+}
+.footer-list-social {
+display: flex;
+gap: 10px;
 }
