@@ -198,10 +198,15 @@ ul {
 	line-height: 24px;
 	width: 270px;
 }
-.advantages-icon {
+.advantages-group {
 	margin-bottom: 30px;
-	background-color: var(--color-background);
+	background: var(--color-background);
 	border-radius: 4px;
+	width: 270px;
+	height: 120px;
+}
+.advantages-icon {
+	object-fit: cover;
 }
 
 .team {
@@ -257,7 +262,6 @@ ul {
 	margin: 0 auto;
 	width: 206px;
 	gap: 10px;
-	
 }
 .team-social {
 	color: var(--color-icon);
@@ -267,9 +271,8 @@ ul {
 	border-radius: 50%;
 	cursor: pointer;
 	display: flex;
-    	align-items: center;
-    	justify-content: center;
-	
+	align-items: center;
+	justify-content: center;
 }
 .team-social:hover,
 .team-social:focus {
@@ -282,7 +285,6 @@ ul {
 	width: 20px;
 	height: 20px;
 	cursor: pointer;
-
 }
 .team-social:hover .team-icon,
 .team-social:focus .team-icon {
@@ -314,20 +316,20 @@ ul {
 	padding: 16px 32px;
 	cursor: pointer;
 }
+.client-item:hover,
+.client-item:focus {
+	border: 1px solid var(--color-akcent);
+	outline: none;
+}
 .client-icon {
 	fill: currentColor;
 	width: 106px;
 	height: 60px;
-	
-
 }
 
-.client-item:hover,
-.client-item:focus,
 .client-item:hover .client-icon,
 .client-item:focus .client-icon {
 	fill: var(--color-akcent);
-	border: 1px solid var(--color-akcent);
 	outline: none;
 }
 /* ----------------------------styles main Portfolio ----------------------------*/
@@ -376,7 +378,6 @@ ul {
 .project-link:hover,
 .project-link:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
 }
 .project-title {
 	font-size: 18px;
@@ -484,8 +485,8 @@ ul {
 	border-radius: 50%;
 	cursor: pointer;
 	display: flex;
-        justify-content: center;
-        align-items: center;
+	justify-content: center;
+	align-items: center;
 }
 
 .footer-link-social:hover,
@@ -497,7 +498,6 @@ ul {
 	fill: var(--primary-color);
 	width: 20px;
 	height: 20px;
-	
 }
 .footer-list-social {
 	display: flex;
