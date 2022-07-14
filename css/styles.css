@@ -477,6 +477,7 @@ ul {
 	margin-bottom: 20px;
 }
 .footer-link-social {
+	color: var(--primary-color: #fff);
 	background: var(--background-footer-icon);
 	width: 44px;
 	height: 44px;
