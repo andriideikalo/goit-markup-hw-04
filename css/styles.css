@@ -204,6 +204,9 @@ ul {
 	border-radius: 4px;
 	width: 270px;
 	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .advantages-icon {
 	object-fit: cover;
@@ -277,6 +280,7 @@ ul {
 .team-social:hover,
 .team-social:focus {
 	background: var(--color-akcent);
+	color: var(--primary-color);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 	outline: none;
 }
@@ -285,11 +289,6 @@ ul {
 	width: 20px;
 	height: 20px;
 	cursor: pointer;
-}
-.team-social:hover .team-icon,
-.team-social:focus .team-icon {
-	fill: var(--primary-color);
-	outline: none;
 }
 
 .client-title {
@@ -307,31 +306,29 @@ ul {
 	gap: 30px;
 }
 .client-item {
-	display: block;
+	/* display: block; */
 	width: 170px;
 	height: 92px;
 	border: 1px solid var(--color-icon);
 	color: var(--color-icon);
 	border-radius: 4px;
-	padding: 16px 32px;
-	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 }
 .client-item:hover,
 .client-item:focus {
+	color: var(--color-akcent);
 	border: 1px solid var(--color-akcent);
 	outline: none;
 }
 .client-icon {
 	fill: currentColor;
-	width: 106px;
-	height: 60px;
+	object-fit: cover;
 }
 
-.client-item:hover .client-icon,
-.client-item:focus .client-icon {
-	fill: var(--color-akcent);
-	outline: none;
-}
+
 /* ----------------------------styles main Portfolio ----------------------------*/
 
 .project-btn {
@@ -378,6 +375,7 @@ ul {
 .project-link:hover,
 .project-link:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+	outline: none;
 }
 .project-title {
 	font-size: 18px;
